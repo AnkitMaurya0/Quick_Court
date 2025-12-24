@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard - QuickCourt</title>
+  <link rel="stylesheet" href="/static/css/owner_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <div class="nav-left">
+      <div class="logo">QuickCourt Owner</div>
+      <input type="text" placeholder="Search bookings or courts..." class="nav-search">
+    </div>
+    <div class="nav-right">
+      <span class="owner-name">Hi, Owner</span>
+      <img src="/static/uploads/default.png" alt="Owner Avatar" class="owner-avatar">
+      <i class="fas fa-bell notifications"></i>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#dashboard">📊 Dashboard</a></li>
+        <li><a href="#facility-management">🏟 Facility Management</a></li>
+        <li><a href="#court-management">⛹ Court Management</a></li>
+        <li><a href="#booking-overview">📅 Booking Overview</a></li>
+        <li><a href="#profile">⚙️ Profile</a></li>
+        <li><a href="/logout">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Dashboard Section -->
+      <section id="dashboard">
+        <h2>📊 Welcome Back, Owner</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <i class="fas fa-calendar"></i>
+            <h3>12</h3>
+            <p>Total Bookings</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-court"></i>
+            <h3>5</h3>
+            <p>Active Courts</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>$1200</h3>
+            <p>Earnings</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Booking Calendar</h3>
+          </div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">📈 Booking Trends (Line/Bar Chart)</div>
+          <div class="chart-card">💰 Earnings Summary</div>
+          <div class="chart-card">⏰ Peak Booking Hours</div>
+        </div>
+      </section>
+
+      <!-- Facility Management Section -->
+      <section id="facility-management">
+        <h2>🏟 Facility Management</h2>
+        <button class="btn add-facility">Add New Facility</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Facility ID</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Sports</th>
+              <th>Amenities</th>
+              <th>Photos</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Green Arena</td>
+              <td>City Center</td>
+              <td>Football, Badminton</td>
+              <td>Lights, Locker Room</td>
+              <td><button class="btn">View</button></td>
+              <td>
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Court Management Section -->
+      <section id="court-management">
+        <h2>⛹ Court Management</h2>
+        <button class="btn add-court">Add New Court</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Court ID</th>
+              <th>Name</th>
+              <th>Sport</th>
+              <th>Price/Hour</th>
+              <th>Operating Hours</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>201</td>
+              <td>Badminton Court 1</td>
+              <td>Badminton</td>
+              <td>$10</td>
+              <td>6:00 AM - 10:00 PM</td>
+              <td>
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Booking Overview Section -->
+      <section id="booking-overview">
+        <h2>📅 Booking Overview</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>User</th>
+              <th>Court</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>301</td>
+              <td>Ankit Kumar</td>
+              <td>Badminton Court 1</td>
+              <td>18 Aug 2025</td>
+              <td>6:00 PM - 7:00 PM</td>
+              <td>Booked</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile">
+        <h2>⚙️ Owner Profile</h2>
+        <div class="profile-card">
+          <img src="/static/uploads/default.png" alt="Owner Avatar" class="avatar">
+          <h3>Owner Name</h3>
+          <p>Email: owner@quickcourt.com</p>
+          <button class="btn">Edit Info</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - QuickCourt</title>
+  <link rel="stylesheet" href="/static/css/user_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">QuickCourt</div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search for venues, sports...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      
+      <a href="{{ url_for('venues') }}"><i class="fas fa-map-marker-alt"></i> Venues</a>
+      <a href="{{ url_for('court_booking') }}"><i class="fas fa-calendar-check"></i> Booking</a>
+      <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
+      <a href="{{ url_for('my_bookings') }}"><i class="fas fa-list"></i> My Bookings</a>
+    </nav>
+
+
+    <!-- Profile -->
+    <div class="profile">
+      <img src="{{ url_for('static', filename='uploads/' ~ avatar) }}" alt="Avatar">
+      <span class="username">Hi, Ankit</span>
+    </div>
+  </header>
+
+  <!-- Welcome Banner -->
+  <section class="welcome-banner">
+    <h1>Welcome to QuickCourt 🎾</h1>
+    <p>Book your favorite courts and play your game hassle-free.</p>
+  </section>
+
+  <!-- Quick Access -->
+  <section class="quick-access">
+    <h2>Quick Access</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-star"></i>
+        <h3>Popular Venues</h3>
+        <p>Find the top-rated courts near you.</p>
+        <a href="#venues" class="btn">Explore</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-futbol"></i>
+        <h3>Popular Sports</h3>
+        <p>Book courts for football, badminton, tennis and more.</p>
+        <a href="#venues" class="btn">View Sports</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venues Section -->
+  <section id="venues" class="venues">
+    <h2>All Venues</h2>
+    <div class="venue-list">
+      
+      <!-- Venue Card 1 -->
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" alt="Football Court">
+        <div class="venue-info">
+          <h3>Green Turf Arena</h3>
+          <p><i class="fas fa-futbol"></i> Football | ₹500/hr</p>
+          <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+          <p class="rating"><i class="fas fa-star"></i> 4.8</p>
+          <a href="single_venue.html" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Venue Card 2 -->
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1610186426899-11f97e5a91d6" alt="Badminton Court">
+        <div class="venue-info">
+          <h3>Smash Badminton Hub</h3>
+          <p><i class="fas fa-table-tennis"></i> Badminton | ₹300/hr</p>
+          <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+          <p class="rating"><i class="fas fa-star"></i> 4.6</p>
+          <a href="single_venue.html" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Venue Card 3 -->
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5" alt="Tennis Court">
+        <div class="venue-info">
+          <h3>Pro Tennis Club</h3>
+          <p><i class="fas fa-table-tennis"></i> Tennis | ₹450/hr</p>
+          <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+          <p class="rating"><i class="fas fa-star"></i> 4.7</p>
+          <a href="single_venue.html" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <!-- Venue Card 4 -->
+      <div class="venue-card">
+        <img src="https://images.unsplash.com/photo-1584466977773-cdb857050c80" alt="Indoor Stadium">
+        <div class="venue-info">
+          <h3>Indoor Sports Complex</h3>
+          <p><i class="fas fa-dumbbell"></i> Multi-Sports | ₹700/hr</p>
+          <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+          <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+          <a href="single_venue.html" class="btn">View Details</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>About QuickCourt</h4>
+        <p>QuickCourt helps you discover, book, and play at the best sports venues near you. Your game, your time, your place.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="user_dashboard.html">Home</a></li>
+          <li><a href="#venues">Venues</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="my_bookings.html">My Bookings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 QuickCourt. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* single_venue.css */
+
+/* General Page Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Venue Details Container */
+.venue-details {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Venue Header */
+.venue-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.venue-header p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Section Titles */
+.venue-details h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 6px;
+}
+
+/* Sports & Amenities Lists */
+.sports-available ul,
+.amenities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sports-available li,
+.amenities li {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.sports-available li i,
+.amenities li i {
+  margin-right: 8px;
+  color: #ff5722;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews {
+  margin-top: 20px;
+}
+
+.review-card {
+  background: #fafafa;
+  border-left: 4px solid #ff5722;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.review-card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.review-card strong {
+  color: #222;
+}
+
+/* Book Now Button */
+.book-btn {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.book-btn .btn {
+  display: inline-block;
+  background: #ff5722;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.book-btn .btn:hover {
+  background: #e64a19;
+}

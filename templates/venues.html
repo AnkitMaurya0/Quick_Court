@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venues Page</title>
+  <link rel="stylesheet" href="/static/css/venue.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🏆 SportBook</div>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search for venues...">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Links -->
+    <nav class="nav-links">
+      <a href="user_dashboard.html">Home</a>
+      <a href="venue.html" class="active">Venues</a>
+      <a href="profile.html">Profile</a>
+      <a href="my_bookings.html">My Bookings</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <h1>All Sports Venues</h1>
+    <p>Find the perfect venue for your game!</p>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="filters">
+    <div class="filter-box">
+      <label><i class="fa-solid fa-volleyball"></i> Sport Type</label>
+      <select>
+        <option>All</option>
+        <option>Football</option>
+        <option>Badminton</option>
+        <option>Tennis</option>
+        <option>Cricket</option>
+      </select>
+    </div>
+
+    <div class="filter-box">
+      <label><i class="fa-solid fa-money-bill-wave"></i> Price</label>
+      <select>
+        <option>Any</option>
+        <option>₹200 - ₹500</option>
+        <option>₹500 - ₹1000</option>
+        <option>₹1000+</option>
+      </select>
+    </div>
+
+    <div class="filter-box">
+      <label><i class="fa-solid fa-building"></i> Venue Type</label>
+      <select>
+        <option>All</option>
+        <option>Indoor</option>
+        <option>Outdoor</option>
+      </select>
+    </div>
+
+    <div class="filter-box">
+      <label><i class="fa-solid fa-star"></i> Rating</label>
+      <select>
+        <option>Any</option>
+        <option>4★ & Above</option>
+        <option>3★ & Above</option>
+        <option>2★ & Above</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Venue Cards -->
+  <section class="venue-list">
+
+    <div class="venue-card">
+      <img src="https://source.unsplash.com/400x250/?football,stadium" alt="Football Ground">
+      <div class="venue-info">
+        <h3>Greenfield Arena</h3>
+        <p><i class="fa-solid fa-volleyball"></i> Football, Cricket</p>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 500/hr</p>
+        <p><i class="fa-solid fa-location-dot"></i> New Delhi</p>
+        <p class="rating"><i class="fa fa-star"></i> 4.5</p>
+      </div>
+    </div>
+
+    <div class="venue-card">
+      <img src="https://source.unsplash.com/400x250/?badminton,court" alt="Badminton Court">
+      <div class="venue-info">
+        <h3>Smash Hub</h3>
+        <p><i class="fa-solid fa-volleyball"></i> Badminton</p>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 300/hr</p>
+        <p><i class="fa-solid fa-location-dot"></i> Bangalore</p>
+        <p class="rating"><i class="fa fa-star"></i> 4.2</p>
+      </div>
+    </div>
+
+    <div class="venue-card">
+      <img src="https://source.unsplash.com/400x250/?tennis,court" alt="Tennis Court">
+      <div class="venue-info">
+        <h3>Grand Slam Court</h3>
+        <p><i class="fa-solid fa-volleyball"></i> Tennis</p>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 700/hr</p>
+        <p><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+        <p class="rating"><i class="fa fa-star"></i> 4.8</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <a href="#" class="prev">&laquo; Prev</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#" class="next">Next &raquo;</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Get to Know Us</h4>
+        <ul>
+          <li><a href="#">About SportBook</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Booking Help</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 SportBook. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

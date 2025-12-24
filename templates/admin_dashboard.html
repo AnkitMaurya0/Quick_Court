@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - QuickCourt</title>
+  <link rel="stylesheet" href="/static/css/admin_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header class="top-navbar">
+    <div class="nav-left">
+      <div class="logo">QuickCourt Admin</div>
+      <input type="text" placeholder="Search users or facilities..." class="nav-search">
+    </div>
+    <div class="nav-right">
+      <span class="admin-name">Hi, Admin</span>
+      <img src="/static/uploads/default.png" alt="Admin Avatar" class="admin-avatar">
+      <i class="fas fa-bell notifications"></i>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#dashboard">📊 Dashboard</a></li>
+        <li><a href="#facility-approval">🏟 Facility Approval</a></li>
+        <li><a href="#user-management">👥 User Management</a></li>
+        <li><a href="#reports">🚨 Reports & Moderation</a></li>
+        <li><a href="#profile">⚙️ Profile</a></li>
+        <li><a href="/logout">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Dashboard Section -->
+      <section id="dashboard">
+        <h2>📊 Global Stats Overview</h2>
+        <div class="stats-grid">
+          <div class="stat-card">Total Users: <span id="total-users">1200</span></div>
+          <div class="stat-card">Facility Owners: <span id="total-owners">85</span></div>
+          <div class="stat-card">Total Bookings: <span id="total-bookings">430</span></div>
+          <div class="stat-card">Active Courts: <span id="active-courts">60</span></div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">📈 Booking Activity (Chart Placeholder)</div>
+          <div class="chart-card">👤 User Registration Trends</div>
+          <div class="chart-card">🏟 Facility Approval Trend</div>
+          <div class="chart-card">⚽ Most Active Sports</div>
+          <div class="chart-card">💰 Earnings Simulation</div>
+        </div>
+      </section>
+
+      <!-- Facility Approval Section -->
+      <section id="facility-approval">
+        <h2>🏟 Facility Approval</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Facility ID</th>
+              <th>Name</th>
+              <th>Owner</th>
+              <th>Status</th>
+              <th>Details</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Sunrise Sports Arena</td>
+              <td>Ravi Kumar</td>
+              <td>Pending</td>
+              <td><button class="btn">View</button></td>
+              <td>
+                <button class="btn approve">Approve</button>
+                <button class="btn reject">Reject</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- User Management Section -->
+      <section id="user-management">
+        <h2>👥 User Management</h2>
+        <input type="text" placeholder="Search by role or status..." class="search-bar">
+        <table>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Amit Verma</td>
+              <td>amit@example.com</td>
+              <td>User</td>
+              <td>Active</td>
+              <td>
+                <button class="btn ban">Ban</button>
+                <button class="btn">View History</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Reports Section -->
+      <section id="reports">
+        <h2>🚨 Reports & Moderation</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Report ID</th>
+              <th>User</th>
+              <th>Facility</th>
+              <th>Issue</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5001</td>
+              <td>Karan Mehta</td>
+              <td>Sunrise Arena</td>
+              <td>Fake photos uploaded</td>
+              <td>
+                <button class="btn">Review</button>
+                <button class="btn reject">Take Action</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile">
+        <h2>⚙️ Admin Profile</h2>
+        <div class="profile-card">
+          <img src="/static/uploads/default.png" alt="Admin Avatar" class="avatar">
+          <h3>Admin Name</h3>
+          <p>Email: admin@quickcourt.com</p>
+          <button class="btn">Update Info</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

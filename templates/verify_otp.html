@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="/static/css/verify_otp.css">
+</head>
+<body>
+  <div class="verify-container">
+    <h2>OTP Verification</h2>
+    <form method="POST" action="/verify">
+      <input type="text" name="otp" placeholder="Enter 4-digit OTP" maxlength="4" required>
+      <button type="submit">Verify</button>
+    </form>
+    <p class="note">Check your email for the OTP code.</p>
+  </div>
+</body>
+</html>
